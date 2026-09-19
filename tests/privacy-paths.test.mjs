@@ -9,13 +9,16 @@ import {projectRoot} from '../server/settings.mjs';
 const exec=promisify(execFile),marker='ONLY-INVENTED-PRIVATE-MARKER';
 async function fixture(t){
  const root=await mkdtemp(join(tmpdir(),'golf-privacy-'));
- t.after(()=>rm(root,{recursive:true,force:true}));
+ const cleanup=[];
+ // Windows cannot remove a running process's working directory. Keep teardown
+ // in one hook so children stop even if an assertion fails before cleanup.
+ t.after(async()=>{try{for(const close of cleanup.reverse())await close();}finally{await rm(root,{recursive:true,force:true,maxRetries:5,retryDelay:100});}});
  for(const name of ['src','server','scripts','public','package.json','index.html','vite.config.js','tournament.config.json','poll.config.json','proposals.config.json'])await cp(join(projectRoot,name),join(root,name),{recursive:true});
  await symlink(join(projectRoot,'node_modules'),join(root,'node_modules'),process.platform==='win32'?'junction':'dir');
  const env={...process.env,GOLF_MODE:'production',GOLF_PUBLIC_ORIGIN:'https://golf.example.invalid',GOLF_DATA_DIR:join(root,'.local','production'),GOLF_ACCESS_FILE:join(root,'.local','production','access.json'),GOLF_STORAGE:'local'};
  for(const key of ['GOLF_CONFIG','GOLF_POLL_CONFIG','GOLF_PROPOSALS_CONFIG','UPSTASH_REDIS_REST_URL','UPSTASH_REDIS_REST_TOKEN','GOLF_DEMO_DATA_DIR'])delete env[key];
  const run=(args,overrides={})=>exec(process.execPath,args,{cwd:root,env:{...env,...overrides},maxBuffer:2_000_000});
- return {root,env,run};
+ return {root,env,run,cleanup};
 }
 test('runtime paths reject symlink aliases into public assets before creating private files',async t=>{
  const f=await fixture(t);await mkdir(join(f.root,'public','media'));
@@ -61,8 +64,9 @@ test('actual dev wrapper serves the compiled app but never private files or Vite
  const f=await fixture(t);await mkdir(join(f.root,'.local','production'),{recursive:true});await mkdir(join(f.root,'public','private'),{recursive:true});
  await writeFile(f.env.GOLF_ACCESS_FILE,marker);await writeFile(join(f.root,'public','private','invented.txt'),marker);
  const child=spawn(process.execPath,['scripts/serve.mjs','--dev','--demo'],{cwd:f.root,env:{...f.env,PORT:'0'},stdio:['ignore','pipe','pipe','ipc']});
- let output='',done=false;child.stdout.on('data',v=>output+=v);child.stderr.on('data',v=>output+=v);child.once('exit',()=>done=true);
- t.after(async()=>{if(!done){child.kill('SIGTERM');await new Promise(r=>child.once('exit',r));}});
+ let output='',done=false;child.stdout.on('data',v=>output+=v);child.stderr.on('data',v=>output+=v);
+ const exited=new Promise(r=>child.once('exit',()=>{done=true;r();}));
+ f.cleanup.push(async()=>{if(!done){const timer=setTimeout(()=>child.kill('SIGKILL'),5000);child.kill('SIGTERM');try{await exited;}finally{clearTimeout(timer);}}});
  const origin=await new Promise((ok,fail)=>{const timer=setTimeout(()=>{child.kill();fail(new Error('Dev startup timed out: '+output));},35000);child.once('message',v=>{if(v.kind==='golf-ready'){clearTimeout(timer);ok(v.origin);}});child.once('exit',()=>{clearTimeout(timer);fail(new Error('Dev startup failed: '+output));});});
  assert.match(await fetch(origin).then(r=>r.text()),/<div id="root">/);
  for(const path of ['/public/private/invented.txt','/private/invented.txt','/.local/production/access.json','/.local/production/access.json?raw','/%2elocal/production/access.json','/@fs/'+f.env.GOLF_ACCESS_FILE,'/@fs/'+f.env.GOLF_ACCESS_FILE+'?import','/src/App.jsx']){
