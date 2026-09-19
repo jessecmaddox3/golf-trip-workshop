@@ -1,0 +1,30 @@
+name: Something is not working
+description: Report a reproducible problem using invented information.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: Please use invented names and records. Never upload your private configuration, access links, scorecards or recovery journal. Security reports belong in the private reporting link.
+  - type: input
+    id: version
+    attributes:
+      label: App version, operating system and browser
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do, and what happened?
+      description: Include the expected result and steps someone can repeat in the invented demo.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Which mode?
+      options:
+        - Invented local demo
+        - Private hosted event
+        - Development or tests
+    validations:
+      required: true

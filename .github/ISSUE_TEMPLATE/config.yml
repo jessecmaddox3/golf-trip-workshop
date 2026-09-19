@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security problem privately
+    url: https://github.com/jessecmaddox3/golf-trip-workshop/security/advisories/new
+    about: Do not post a vulnerability or working access credentials in a public issue.

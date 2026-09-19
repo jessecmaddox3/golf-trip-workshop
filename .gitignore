@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-private/
+public/private/
+.local/
+artifacts/
+.env*
+!.env.example
+.DS_Store
+__pycache__/

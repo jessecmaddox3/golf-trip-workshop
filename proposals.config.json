@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "fictional": true,
+  "proposals": [
+    {
+      "id": "valley",
+      "name": "Valley Weekend",
+      "kind": "hard-soft",
+      "tagline": "A compact base. Plenty of time together.",
+      "description": "An independently invented proposal that you can replace with your own researched routes, quotes and plans.",
+      "groupSize": 8,
+      "currency": "USD",
+      "target": 1700,
+      "practiceDefault": true,
+      "practiceCost": 54,
+      "origins": [
+        {
+          "id": "nearby",
+          "name": "Nearby driver",
+          "cost": 46,
+          "route": "Share a car from your home area.",
+          "arrival": "The evening before the first match",
+          "transfer": "Fuel and shared parking are included in this allowance."
+        },
+        {
+          "id": "regional",
+          "name": "Regional traveler",
+          "cost": 184,
+          "route": "Choose a regional train or a longer shared drive.",
+          "arrival": "Arrive by early evening",
+          "transfer": "Allow one connection and agree on a pickup before booking."
+        },
+        {
+          "id": "fly",
+          "name": "Air traveler",
+          "cost": 329,
+          "route": "Compare a return flight plus the final ground transfer.",
+          "arrival": "Arrive the previous afternoon",
+          "transfer": "Flight and transfer allowance only. Verify baggage charges and actual routes."
+        }
+      ],
+      "courses": [
+        {
+          "id": "valley-course-1",
+          "name": "Pebble Meadow",
+          "fee": 92,
+          "description": "A generous opening stretch, a tighter middle and a short finishing hole make a useful first match.",
+          "walkable": true,
+          "drive": "12 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 160,
+          "y": 160
+        },
+        {
+          "id": "valley-course-2",
+          "name": "Winding Run",
+          "fee": 108,
+          "description": "An invented ridge route rewards a chosen target and leaves room for different tees.",
+          "walkable": false,
+          "drive": "28 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 390,
+          "y": 260
+        },
+        {
+          "id": "valley-course-3",
+          "name": "Fern Hollow",
+          "fee": 121,
+          "description": "A compact finish brings the group back to the same terrace without a long transfer.",
+          "walkable": true,
+          "drive": "18 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 620,
+          "y": 160
+        }
+      ],
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Arrival",
+          "title": "Get everyone settled",
+          "items": [
+            "Confirm your arrival route before buying tickets.",
+            "Optional practice if your arrival allows it.",
+            "Unpack, share dinner and agree on morning transport."
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day one",
+          "title": "Find your rhythm",
+          "items": [
+            "Morning round at Pebble Meadow.",
+            "Leave a real lunch break between golf and plans.",
+            "Keep the evening open for the group."
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day two",
+          "title": "The main match",
+          "items": [
+            "Morning round at Winding Run.",
+            "Share scorecards and settle any unclear results.",
+            "An optional short walk, then dinner at the base."
+          ]
+        },
+        {
+          "id": "day-4",
+          "label": "Departure",
+          "title": "One more round",
+          "items": [
+            "Finale at Fern Hollow.",
+            "Leave a luggage and departure buffer.",
+            "Close the shared expense sheet before going home."
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/invented-course.png",
+          "caption": "An illustrated idea for open fairways. No real course is shown."
+        },
+        {
+          "src": "/assets/invented-cottage.png",
+          "caption": "An illustrated idea for a shared base. No real property is shown."
+        }
+      ],
+      "logistics": [
+        "Confirm availability and cancellation terms before collecting money.",
+        "Keep unbooked ideas separate from confirmed arrangements.",
+        "Agree on who is handling transport, groceries and the first arrival."
+      ],
+      "costs": {
+        "sharedItems": [
+          {
+            "label": "Three course allowances",
+            "amount": 321
+          },
+          {
+            "label": "Shared house, per player",
+            "amount": 248
+          },
+          {
+            "label": "Local vehicles",
+            "amount": 61
+          },
+          {
+            "label": "Group meals",
+            "amount": 105
+          },
+          {
+            "label": "Contest pool and mementos",
+            "amount": 48
+          }
+        ],
+        "personalSpend": 165,
+        "hardBase": 678
+      }
+    },
+    {
+      "id": "meadow",
+      "name": "Meadow Retreat",
+      "kind": "shared",
+      "tagline": "Unpack once. Take the scenic way to the tee.",
+      "description": "An independently invented proposal that you can replace with your own researched routes, quotes and plans.",
+      "groupSize": 8,
+      "currency": "USD",
+      "target": 1825,
+      "practiceDefault": true,
+      "practiceCost": 61,
+      "origins": [
+        {
+          "id": "nearby",
+          "name": "Nearby driver",
+          "cost": 54,
+          "route": "Share a car from your home area.",
+          "arrival": "The evening before the first match",
+          "transfer": "Fuel and shared parking are included in this allowance."
+        },
+        {
+          "id": "regional",
+          "name": "Regional traveler",
+          "cost": 195,
+          "route": "Choose a regional train or a longer shared drive.",
+          "arrival": "Arrive by early evening",
+          "transfer": "Allow one connection and agree on a pickup before booking."
+        },
+        {
+          "id": "fly",
+          "name": "Air traveler",
+          "cost": 346,
+          "route": "Compare a return flight plus the final ground transfer.",
+          "arrival": "Arrive the previous afternoon",
+          "transfer": "Flight and transfer allowance only. Verify baggage charges and actual routes."
+        }
+      ],
+      "courses": [
+        {
+          "id": "meadow-course-1",
+          "name": "Poppy Fields",
+          "fee": 86,
+          "description": "A generous opening stretch, a tighter middle and a short finishing hole make a useful first match.",
+          "walkable": true,
+          "drive": "12 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 160,
+          "y": 160
+        },
+        {
+          "id": "meadow-course-2",
+          "name": "Oak Lantern",
+          "fee": 112,
+          "description": "An invented ridge route rewards a chosen target and leaves room for different tees.",
+          "walkable": false,
+          "drive": "28 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 390,
+          "y": 260
+        },
+        {
+          "id": "meadow-course-3",
+          "name": "Green Compass",
+          "fee": 103,
+          "description": "A compact finish brings the group back to the same terrace without a long transfer.",
+          "walkable": true,
+          "drive": "18 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 620,
+          "y": 160
+        }
+      ],
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Arrival",
+          "title": "Get everyone settled",
+          "items": [
+            "Confirm your arrival route before buying tickets.",
+            "Optional practice if your arrival allows it.",
+            "Unpack, share dinner and agree on morning transport."
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day one",
+          "title": "Find your rhythm",
+          "items": [
+            "Morning round at Poppy Fields.",
+            "Leave a real lunch break between golf and plans.",
+            "Keep the evening open for the group."
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day two",
+          "title": "The main match",
+          "items": [
+            "Morning round at Oak Lantern.",
+            "Share scorecards and settle any unclear results.",
+            "An optional short walk, then dinner at the base."
+          ]
+        },
+        {
+          "id": "day-4",
+          "label": "Departure",
+          "title": "One more round",
+          "items": [
+            "Finale at Green Compass.",
+            "Leave a luggage and departure buffer.",
+            "Close the shared expense sheet before going home."
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/invented-course.png",
+          "caption": "An illustrated idea for open fairways. No real course is shown."
+        },
+        {
+          "src": "/assets/invented-cottage.png",
+          "caption": "An illustrated idea for a shared base. No real property is shown."
+        }
+      ],
+      "logistics": [
+        "Confirm availability and cancellation terms before collecting money.",
+        "Keep unbooked ideas separate from confirmed arrangements.",
+        "Agree on who is handling transport, groceries and the first arrival."
+      ],
+      "costs": {
+        "sharedItems": [
+          {
+            "label": "Three course allowances",
+            "amount": 301
+          },
+          {
+            "label": "Resort-style base, per player",
+            "amount": 272
+          },
+          {
+            "label": "Shared transfers",
+            "amount": 59
+          },
+          {
+            "label": "Group meals",
+            "amount": 116
+          },
+          {
+            "label": "Contest pool",
+            "amount": 35
+          }
+        ],
+        "personalSpend": 154
+      }
+    },
+    {
+      "id": "lakes",
+      "name": "Lake Circuit",
+      "kind": "winner",
+      "tagline": "A little road trip with a friendly finish.",
+      "description": "An independently invented proposal that you can replace with your own researched routes, quotes and plans.",
+      "groupSize": 8,
+      "currency": "USD",
+      "target": 1950,
+      "practiceDefault": false,
+      "practiceCost": 68,
+      "origins": [
+        {
+          "id": "nearby",
+          "name": "Nearby driver",
+          "cost": 62,
+          "route": "Share a car from your home area.",
+          "arrival": "The evening before the first match",
+          "transfer": "Fuel and shared parking are included in this allowance."
+        },
+        {
+          "id": "regional",
+          "name": "Regional traveler",
+          "cost": 206,
+          "route": "Choose a regional train or a longer shared drive.",
+          "arrival": "Arrive by early evening",
+          "transfer": "Allow one connection and agree on a pickup before booking."
+        },
+        {
+          "id": "fly",
+          "name": "Air traveler",
+          "cost": 363,
+          "route": "Compare a return flight plus the final ground transfer.",
+          "arrival": "Arrive the previous afternoon",
+          "transfer": "Flight and transfer allowance only. Verify baggage charges and actual routes."
+        }
+      ],
+      "courses": [
+        {
+          "id": "lakes-course-1",
+          "name": "Glasswater",
+          "fee": 117,
+          "description": "A generous opening stretch, a tighter middle and a short finishing hole make a useful first match.",
+          "walkable": true,
+          "drive": "12 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 160,
+          "y": 160
+        },
+        {
+          "id": "lakes-course-2",
+          "name": "Reed Bank",
+          "fee": 134,
+          "description": "An invented ridge route rewards a chosen target and leaves room for different tees.",
+          "walkable": false,
+          "drive": "28 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 390,
+          "y": 260
+        },
+        {
+          "id": "lakes-course-3",
+          "name": "Silver Bend",
+          "fee": 98,
+          "description": "A compact finish brings the group back to the same terrace without a long transfer.",
+          "walkable": true,
+          "drive": "18 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 620,
+          "y": 160
+        }
+      ],
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Arrival",
+          "title": "Get everyone settled",
+          "items": [
+            "Confirm your arrival route before buying tickets.",
+            "Optional practice if your arrival allows it.",
+            "Unpack, share dinner and agree on morning transport."
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day one",
+          "title": "Find your rhythm",
+          "items": [
+            "Morning round at Glasswater.",
+            "Leave a real lunch break between golf and plans.",
+            "Keep the evening open for the group."
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day two",
+          "title": "The main match",
+          "items": [
+            "Morning round at Reed Bank.",
+            "Share scorecards and settle any unclear results.",
+            "An optional short walk, then dinner at the base."
+          ]
+        },
+        {
+          "id": "day-4",
+          "label": "Departure",
+          "title": "One more round",
+          "items": [
+            "Finale at Silver Bend.",
+            "Leave a luggage and departure buffer.",
+            "Close the shared expense sheet before going home."
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/invented-course.png",
+          "caption": "An illustrated idea for open fairways. No real course is shown."
+        },
+        {
+          "src": "/assets/invented-cottage.png",
+          "caption": "An illustrated idea for a shared base. No real property is shown."
+        }
+      ],
+      "logistics": [
+        "Confirm availability and cancellation terms before collecting money.",
+        "Keep unbooked ideas separate from confirmed arrangements.",
+        "Agree on who is handling transport, groceries and the first arrival."
+      ],
+      "costs": {
+        "sharedItems": [
+          {
+            "label": "Three course allowances",
+            "amount": 349
+          },
+          {
+            "label": "Circuit lodging, per player",
+            "amount": 294
+          },
+          {
+            "label": "Shared vehicles",
+            "amount": 94
+          },
+          {
+            "label": "Group meals",
+            "amount": 122
+          },
+          {
+            "label": "Contest pool",
+            "amount": 65
+          }
+        ],
+        "personalSpend": 182,
+        "hardBase": 802,
+        "winnerReturn": 215
+      }
+    },
+    {
+      "id": "cottages",
+      "name": "Two Cottage Escape",
+      "kind": "split-house",
+      "tagline": "Two small houses, one very good weekend.",
+      "description": "An independently invented proposal that you can replace with your own researched routes, quotes and plans.",
+      "groupSize": 8,
+      "currency": "USD",
+      "target": 2075,
+      "practiceDefault": false,
+      "practiceCost": 75,
+      "origins": [
+        {
+          "id": "nearby",
+          "name": "Nearby driver",
+          "cost": 70,
+          "route": "Share a car from your home area.",
+          "arrival": "The evening before the first match",
+          "transfer": "Fuel and shared parking are included in this allowance."
+        },
+        {
+          "id": "regional",
+          "name": "Regional traveler",
+          "cost": 217,
+          "route": "Choose a regional train or a longer shared drive.",
+          "arrival": "Arrive by early evening",
+          "transfer": "Allow one connection and agree on a pickup before booking."
+        },
+        {
+          "id": "fly",
+          "name": "Air traveler",
+          "cost": 380,
+          "route": "Compare a return flight plus the final ground transfer.",
+          "arrival": "Arrive the previous afternoon",
+          "transfer": "Flight and transfer allowance only. Verify baggage charges and actual routes."
+        }
+      ],
+      "courses": [
+        {
+          "id": "cottages-course-1",
+          "name": "Apple Gate",
+          "fee": 101,
+          "description": "A generous opening stretch, a tighter middle and a short finishing hole make a useful first match.",
+          "walkable": true,
+          "drive": "12 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 160,
+          "y": 160
+        },
+        {
+          "id": "cottages-course-2",
+          "name": "Birch Landing",
+          "fee": 127,
+          "description": "An invented ridge route rewards a chosen target and leaves room for different tees.",
+          "walkable": false,
+          "drive": "28 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 390,
+          "y": 260
+        },
+        {
+          "id": "cottages-course-3",
+          "name": "Fable Hill",
+          "fee": 114,
+          "description": "A compact finish brings the group back to the same terrace without a long transfer.",
+          "walkable": true,
+          "drive": "18 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 620,
+          "y": 160
+        }
+      ],
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Arrival",
+          "title": "Get everyone settled",
+          "items": [
+            "Confirm your arrival route before buying tickets.",
+            "Optional practice if your arrival allows it.",
+            "Unpack, share dinner and agree on morning transport."
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day one",
+          "title": "Find your rhythm",
+          "items": [
+            "Morning round at Apple Gate.",
+            "Leave a real lunch break between golf and plans.",
+            "Keep the evening open for the group."
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day two",
+          "title": "The main match",
+          "items": [
+            "Morning round at Birch Landing.",
+            "Share scorecards and settle any unclear results.",
+            "An optional short walk, then dinner at the base."
+          ]
+        },
+        {
+          "id": "day-4",
+          "label": "Departure",
+          "title": "One more round",
+          "items": [
+            "Finale at Fable Hill.",
+            "Leave a luggage and departure buffer.",
+            "Close the shared expense sheet before going home."
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/invented-course.png",
+          "caption": "An illustrated idea for open fairways. No real course is shown."
+        },
+        {
+          "src": "/assets/invented-cottage.png",
+          "caption": "An illustrated idea for a shared base. No real property is shown."
+        }
+      ],
+      "logistics": [
+        "Confirm availability and cancellation terms before collecting money.",
+        "Keep unbooked ideas separate from confirmed arrangements.",
+        "Agree on who is handling transport, groceries and the first arrival."
+      ],
+      "costs": {
+        "houses": [
+          {
+            "id": "garden",
+            "name": "Garden Cottage",
+            "total": 1357.5
+          },
+          {
+            "id": "grove",
+            "name": "Grove Cottage",
+            "total": 1543.25
+          }
+        ],
+        "golfItems": [
+          {
+            "label": "Apple Gate",
+            "amount": 101
+          },
+          {
+            "label": "Birch Landing",
+            "amount": 127
+          },
+          {
+            "label": "Fable Hill",
+            "amount": 114
+          }
+        ],
+        "cart": 38,
+        "forecaddie": 42,
+        "vehicles": 73,
+        "contingency": 81,
+        "personalSpend": 193,
+        "comparisonBase": 1480,
+        "rateContext": [
+          {
+            "label": "Weekday guest allowance",
+            "amount": 101,
+            "note": "Fictional offsite rate; booking conditions unknown."
+          },
+          {
+            "label": "Weekend guest allowance",
+            "amount": 127,
+            "note": "Fictional offsite rate; does not imply access."
+          },
+          {
+            "label": "Onsite package allowance",
+            "amount": 114,
+            "note": "Fictional package rate; compare required lodging nights."
+          }
+        ]
+      }
+    },
+    {
+      "id": "clubhouse",
+      "name": "Clubhouse Collection",
+      "kind": "group-package",
+      "tagline": "Build the group package around your favorite finale.",
+      "description": "An independently invented proposal that you can replace with your own researched routes, quotes and plans.",
+      "groupSize": 8,
+      "currency": "USD",
+      "target": 2200,
+      "practiceDefault": false,
+      "practiceCost": 82,
+      "origins": [
+        {
+          "id": "nearby",
+          "name": "Nearby driver",
+          "cost": 78,
+          "route": "Share a car from your home area.",
+          "arrival": "The evening before the first match",
+          "transfer": "Fuel and shared parking are included in this allowance."
+        },
+        {
+          "id": "regional",
+          "name": "Regional traveler",
+          "cost": 228,
+          "route": "Choose a regional train or a longer shared drive.",
+          "arrival": "Arrive by early evening",
+          "transfer": "Allow one connection and agree on a pickup before booking."
+        },
+        {
+          "id": "fly",
+          "name": "Air traveler",
+          "cost": 397,
+          "route": "Compare a return flight plus the final ground transfer.",
+          "arrival": "Arrive the previous afternoon",
+          "transfer": "Flight and transfer allowance only. Verify baggage charges and actual routes."
+        }
+      ],
+      "courses": [
+        {
+          "id": "clubhouse-course-1",
+          "name": "Old Orchard",
+          "fee": 99,
+          "description": "A generous opening stretch, a tighter middle and a short finishing hole make a useful first match.",
+          "walkable": true,
+          "drive": "12 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 160,
+          "y": 160
+        },
+        {
+          "id": "clubhouse-course-2",
+          "name": "Pine Window",
+          "fee": 126,
+          "description": "An invented ridge route rewards a chosen target and leaves room for different tees.",
+          "walkable": false,
+          "drive": "28 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 390,
+          "y": 260
+        },
+        {
+          "id": "clubhouse-course-3",
+          "name": "Sunroom Links",
+          "fee": 142,
+          "description": "A compact finish brings the group back to the same terrace without a long transfer.",
+          "walkable": true,
+          "drive": "18 minutes from the base",
+          "image": "/assets/invented-course.png",
+          "notes": [
+            "Illustrated example, not a real course.",
+            "Rate is an invented per-player allowance; taxes and booking terms must be checked for a real trip."
+          ],
+          "x": 620,
+          "y": 160
+        }
+      ],
+      "days": [
+        {
+          "id": "day-1",
+          "label": "Arrival",
+          "title": "Get everyone settled",
+          "items": [
+            "Arrive, unpack and confirm transport for the first full day.",
+            "Keep the evening free for dinner and the group briefing."
+          ]
+        },
+        {
+          "id": "day-2",
+          "label": "Day one",
+          "title": "Find your rhythm",
+          "items": [
+            "Leave a full lunch and transfer buffer between the two rounds."
+          ],
+          "rounds": [
+            "package",
+            "premium"
+          ]
+        },
+        {
+          "id": "day-3",
+          "label": "Day two",
+          "title": "The main match",
+          "items": [
+            "Allow an afternoon rest if the replay is off."
+          ],
+          "rounds": [
+            "package",
+            "replay"
+          ]
+        },
+        {
+          "id": "day-4",
+          "label": "Departure",
+          "title": "One more round",
+          "items": [
+            "Allow time after the finale for packing and the journey home."
+          ],
+          "rounds": [
+            "package"
+          ]
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/assets/invented-course.png",
+          "caption": "An illustrated idea for open fairways. No real course is shown."
+        },
+        {
+          "src": "/assets/invented-cottage.png",
+          "caption": "An illustrated idea for a shared base. No real property is shown."
+        }
+      ],
+      "logistics": [
+        "Confirm availability and cancellation terms before collecting money.",
+        "Keep unbooked ideas separate from confirmed arrangements.",
+        "Agree on who is handling transport, groceries and the first arrival."
+      ],
+      "costs": {
+        "houses": [
+          {
+            "id": "courtyard",
+            "name": "Courtyard House",
+            "total": 2637.6,
+            "description": "One shared living room and a kitchen table for the next-day plan.",
+            "image": "/assets/invented-cottage.png"
+          },
+          {
+            "id": "veranda",
+            "name": "Veranda House",
+            "total": 3084,
+            "description": "A second illustrated lodging option with more common space.",
+            "image": "/assets/invented-cottage.png"
+          },
+          {
+            "id": "unquoted",
+            "name": "House still awaiting a quote",
+            "total": null,
+            "description": "Unavailable until a full-stay quote is supplied.",
+            "image": "/assets/invented-cottage.png"
+          }
+        ],
+        "packages": [
+          {
+            "id": "orchard",
+            "name": "Orchard finale package",
+            "amount": 399,
+            "rounds": 3,
+            "description": "Three included rounds, ending at the illustrated orchard course."
+          },
+          {
+            "id": "sunroom",
+            "name": "Sunroom finale package",
+            "amount": 457,
+            "rounds": 3,
+            "description": "Three included rounds, with a different final course."
+          }
+        ],
+        "premiumRate": 186,
+        "premiumMin": 1,
+        "premiumMax": 2000,
+        "gambling": 75,
+        "holeInOne": 20,
+        "swag": 38,
+        "groupFood": 127
+      }
+    }
+  ]
+}

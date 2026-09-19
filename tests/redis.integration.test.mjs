@@ -1,0 +1,40 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,rm,access} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {spawn,execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {createServer} from 'node:http';
+import {Redis} from '@upstash/redis';
+import {RedisStore} from '../server/store.mjs';
+const exec=promisify(execFile),binary=process.env.REDIS_SERVER,cli=process.env.REDIS_CLI;
+// This suite needs an actual disposable Redis, never a real Upstash database.
+test('actual Redis Lua and real Upstash client preserve arrays, revisions, retries and namespace integrity',{skip:!binary||!cli},async t=>{
+ const dir=await mkdtemp(join(tmpdir(),'golf-redis-test-')),socket=join(dir,'redis.sock');
+ const child=spawn(binary,['--port','0','--unixsocket',socket,'--unixsocketperm','700','--save','','--appendonly','no','--dir',dir],{stdio:'ignore'});let exited=false;child.once('exit',()=>exited=true);
+ t.after(async()=>{if(!exited){child.kill('SIGTERM');await new Promise(r=>child.once('exit',r));}await rm(dir,{recursive:true,force:true});});
+ for(let i=0;i<100;i++){try{await access(socket);break;}catch{if(exited)throw new Error('Test Redis exited');await new Promise(r=>setTimeout(r,20));}}
+ const command=async args=>JSON.parse((await exec(cli,['-s',socket,'--json',...args.map(String)],{maxBuffer:5_000_000})).stdout);
+ assert.equal(await command(['PING']),'PONG');
+ const bridge=createServer(async(req,res)=>{try{if(req.headers.authorization!=='Bearer invented-test-token'){res.writeHead(401);return res.end();}const parts=[];for await(const chunk of req)parts.push(chunk);const input=JSON.parse(Buffer.concat(parts));const encode=v=>req.headers['upstash-encoding']==='base64'?(typeof v==='string'?Buffer.from(v).toString('base64'):Array.isArray(v)?v.map(encode):v):v;const result=Array.isArray(input[0])?await Promise.all(input.map(async cmd=>({result:encode(await command(cmd))}))):{result:encode(await command(input))};res.writeHead(200,{'Content-Type':'application/json'});res.end(JSON.stringify(result));}catch(e){res.writeHead(400,{'Content-Type':'application/json'});res.end(JSON.stringify({error:e.message}));}});
+ await new Promise(r=>bridge.listen(0,'127.0.0.1',r));t.after(()=>new Promise(r=>bridge.close(r)));
+ const client=new Redis({url:`http://127.0.0.1:${bridge.address().port}`,token:'invented-test-token',automaticDeserialization:false,enableAutoPipelining:false});
+ const options={client,eventId:'synthetic-redis',configHash:'fixture'},store=new RedisStore({...options,allowCreate:true});
+ const seed={expenses:[],announcements:[],scores:{empty:[],filled:[4,null,5]},nested:{}};await store.initialize({event:seed});assert.deepEqual((await store.read('event')).value,seed);
+ const a={operationId:'first',baseRevision:0,value:{...seed,announcements:['first']}};
+ const receipt=await store.commit('event',a);assert.equal(receipt.revision,1);assert.deepEqual((await store.read('event')).value,a.value);
+ const other=new RedisStore(options),results=await Promise.allSettled([store.commit('event',{operationId:'second-a',baseRevision:1,value:{...seed,announcements:['A']}}),other.commit('event',{operationId:'second-b',baseRevision:1,value:{...seed,announcements:['B']}})]);
+ assert.equal(results.filter(r=>r.status==='fulfilled').length,1);assert.equal(results.find(r=>r.status==='rejected').reason.code,'CONFLICT');
+ assert.deepEqual(await other.commit('event',a),receipt);assert.equal((await store.read('event')).revision,2);
+ await assert.rejects(store.commit('event',{...a,value:seed}),{code:'OPERATION_REUSED'});
+ await store.commit('poll-p01',{operationId:'poll',baseRevision:0,value:{mustPlay:[],suggestion:'fictional'}});assert.deepEqual((await store.readMany(['event','poll-p01','poll-p02']))['poll-p01'].value.mustPlay,[]);
+ await store.putPhoto('photo-one',{mime:'image/png',data:'aGVsbG8='});assert.equal((await store.getPhoto('photo-one')).mime,'image/png');
+ assert.equal(await store.reserveQuota('one-day',1),1);await assert.rejects(store.reserveQuota('one-day',1),{code:'QUOTA'});
+ const before=await command(['HGET',store.key,'doc:event']);await command(['HDEL',store.key,'binding']);
+ await assert.rejects(store.initialize({event:seed}),{code:'STORE_DAMAGED'});assert.equal(await command(['HGET',store.key,'doc:event']),before);
+ await assert.rejects(store.commit('event',{operationId:'missing-binding',baseRevision:2,value:seed}),{code:'STORE_BINDING'});
+ await command(['HSET',store.key,'binding',store.bindingValue]);await command(['HDEL',store.key,'doc:event']);
+ await assert.rejects(store.commit('event',{operationId:'missing-event',baseRevision:0,value:seed}),{code:'STORE_DAMAGED'});await assert.rejects(store.initialize({event:seed}),{code:'STORE_DAMAGED'});
+ const absent=new RedisStore({...options,eventId:'never-initialized'});await assert.rejects(absent.initialize({event:seed}),{code:'STORE_BINDING'});
+});

@@ -1,0 +1,24 @@
+[
+  {
+    "tool": "built-in ChatGPT image generation",
+    "generated": "2026-09-19",
+    "file": "docs/assets/hero.png",
+    "also": "public/assets/hero.png",
+    "prompt": "Use case: ads-marketing. Create a polished, fun, exceptionally readable wide 2:1 illustrated GitHub landing-page banner for an open-source golf tournament and trip planning app. Exact title: \"Golf Trip Workshop\". Exact subtitle: \"Plan the trip. Play the matches.\" Three small, readable feature labels: \"Pick a place\" · \"Keep score\" · \"Settle up\". Warm ivory paper, deep forest green, muted gold, elegant editorial serif title with simple sans-serif secondary text. Original playful travel-poster illustration of a wholly invented rolling golf landscape and clubhouse, with a foreground scorecard, pencil, little flag, travel bag and a tidy planning notebook. Make the banner feel like a charming mini sell-page with excellent hierarchy and generous whitespace, attractive to ordinary people rather than technical developers. Use only those short text strings, no fake UI text. Everything is invented from scratch: no real golf course, resort, house, map, address, logo, real person, personal data or reference photo. Do not depict a specific group size or historic trip. No brand marks, stock watermark or photograph imitation. This is original promotional illustration, not a screenshot.",
+    "inputs": "No reference images; invented from scratch."
+  },
+  {
+    "tool": "built-in ChatGPT image generation",
+    "generated": "2026-09-19",
+    "file": "public/assets/invented-course.png",
+    "prompt": "Use case: illustration-story. Create an original, elegant wide 3:2 editorial travel illustration for a wholly fictional golf-trip planning demo. Scene: a rolling meadow golf course with a curved fairway, small flag, pale sand bunkers, wild grasses, a gentle lake and distant wooded hills. Sophisticated warm ivory, forest green, muted ochre and soft blue palette, subtle textured paper, clean shapes, inviting late-afternoon light. No people, no words, no logos, no real course, landmark, address or copied scorecard. This is a clearly illustrated invented landscape, not a photograph or a real-course guide. Fill the frame beautifully so it works as a large gallery image.",
+    "inputs": "No reference images; invented from scratch."
+  },
+  {
+    "tool": "built-in ChatGPT image generation",
+    "generated": "2026-09-19",
+    "file": "public/assets/invented-cottage.png",
+    "prompt": "Use case: illustration-story. Create an original, elegant wide 3:2 editorial travel illustration for a wholly fictional golf-trip planning demo. Scene: a cozy invented cottage common room with comfortable chairs, a long wooden dining table, a few books, a golf bag by the doorway and French doors opening to a garden at golden hour. Sophisticated warm ivory, forest green, muted ochre and soft blue palette, subtle textured paper, clean shapes, welcoming and quietly playful. No people, no words, no logos, no personal photographs or identifying items. Do not depict a known rental, residence or location. This is a clearly illustrated fictional lodging idea, not a listing photograph. Fill the frame beautifully as a large gallery image.",
+    "inputs": "No reference images; invented from scratch."
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "title": "Choose our next golf weekend",
+  "description": "A complete invented planning poll. Compare the five proposal styles, then tell the group what works for you.",
+  "bases": [
+    {
+      "id": "valley",
+      "name": "Valley Weekend",
+      "desc": "A walkable base, a practice option and a clear hard/soft budget."
+    },
+    {
+      "id": "meadow",
+      "name": "Meadow Retreat",
+      "desc": "A shared resort-style base with several arrival routes."
+    },
+    {
+      "id": "lakes",
+      "name": "Lake Circuit",
+      "desc": "A longer circuit with an optional winner-return scenario."
+    },
+    {
+      "id": "cottages",
+      "name": "Two Cottage Escape",
+      "desc": "Split lodging, several courses and an alternate-itinerary comparison."
+    },
+    {
+      "id": "clubhouse",
+      "name": "Clubhouse Collection",
+      "desc": "Choose a house and finale within a focused group budget."
+    }
+  ],
+  "driving": [
+    {
+      "id": "short",
+      "name": "Keep daily drives short"
+    },
+    {
+      "id": "balanced",
+      "name": "A mix is fine"
+    },
+    {
+      "id": "any",
+      "name": "Happy to drive for a course"
+    }
+  ],
+  "mustPlay": [
+    {
+      "id": "walk",
+      "name": "A walkable round"
+    },
+    {
+      "id": "short-course",
+      "name": "A short-course afternoon"
+    },
+    {
+      "id": "replay",
+      "name": "A replay round"
+    },
+    {
+      "id": "match-play",
+      "name": "A full match-play day"
+    }
+  ],
+  "dates": [
+    {
+      "id": "early",
+      "name": "May 8–11, 2031"
+    },
+    {
+      "id": "middle",
+      "name": "May 15–18, 2031"
+    },
+    {
+      "id": "late",
+      "name": "May 22–25, 2031"
+    }
+  ],
+  "arrival": [
+    {
+      "id": "night-before",
+      "name": "The night before"
+    },
+    {
+      "id": "morning",
+      "name": "First morning"
+    },
+    {
+      "id": "flexible",
+      "name": "Flexible"
+    }
+  ]
+}

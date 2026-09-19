@@ -1,0 +1,2114 @@
+{
+  "schemaVersion": 1,
+  "event": {
+    "id": "cedar-dune-cup",
+    "name": "Cedar & Dune Cup",
+    "edition": "An invented golf weekend",
+    "location": "Lark Valley, fictional setting",
+    "timezone": "UTC",
+    "startsAt": "2030-05-06T00:00:00Z",
+    "endsAt": "2030-05-10T23:59:59Z",
+    "demoNow": "2030-05-08T10:30:00Z"
+  },
+  "teams": {
+    "usa": {
+      "name": "Cedar",
+      "flag": "🌲",
+      "players": [
+        {
+          "id": "p01",
+          "name": "Iris West",
+          "short": "Iris",
+          "role": "Captain",
+          "handicap": -1.3
+        },
+        {
+          "id": "p02",
+          "name": "Milo Park",
+          "short": "Milo",
+          "role": "",
+          "handicap": 7.2
+        },
+        {
+          "id": "p03",
+          "name": "Jules Stone",
+          "short": "Jules",
+          "role": "",
+          "handicap": 15.1
+        },
+        {
+          "id": "p04",
+          "name": "Sage Bell",
+          "short": "Sage",
+          "role": "",
+          "handicap": 28.6
+        }
+      ]
+    },
+    "europe": {
+      "name": "Dune",
+      "flag": "🌾",
+      "players": [
+        {
+          "id": "p05",
+          "name": "Nico Reed",
+          "short": "Nico",
+          "role": "Captain",
+          "handicap": 3.4
+        },
+        {
+          "id": "p06",
+          "name": "Vera Fox",
+          "short": "Vera",
+          "role": "",
+          "handicap": 11.7
+        },
+        {
+          "id": "p07",
+          "name": "Remy Snow",
+          "short": "Remy",
+          "role": "",
+          "handicap": 20.8
+        },
+        {
+          "id": "p08",
+          "name": "Theo Wren",
+          "short": "Theo",
+          "role": "",
+          "handicap": 41.2
+        }
+      ]
+    }
+  },
+  "courses": {
+    "course-01": {
+      "id": "course-01",
+      "name": "Juniper Reach",
+      "icon": "⛳",
+      "tag": "Entirely fictional",
+      "description": "An invented course for exploring the planner and its scoring tools.",
+      "overview": "Wide landing areas, short precision holes and a few longer approaches provide a varied example.",
+      "strategy": "Use the course guide to agree on tees and review each hole together.",
+      "color": "forest",
+      "par": 72,
+      "pars": [
+        3,
+        5,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        5,
+        4,
+        5,
+        4,
+        4,
+        5,
+        4,
+        3,
+        3,
+        4
+      ],
+      "hcpIndex": [
+        17,
+        10,
+        15,
+        4,
+        11,
+        16,
+        7,
+        8,
+        18,
+        9,
+        1,
+        2,
+        13,
+        3,
+        6,
+        14,
+        12,
+        5
+      ],
+      "tees": [
+        {
+          "tee": "Meadow",
+          "yds": "5,872",
+          "rating": 68.6,
+          "slope": 115,
+          "note": "Forward example"
+        },
+        {
+          "tee": "Ridge",
+          "yds": "6,152",
+          "rating": 71.2,
+          "slope": 124,
+          "note": "Default example"
+        },
+        {
+          "tee": "Beacon",
+          "yds": "6,492",
+          "rating": 73.4,
+          "slope": 135,
+          "note": "Long example"
+        }
+      ],
+      "defaultTee": 1,
+      "holes": [
+        {
+          "num": 1,
+          "name": "Quiet Corner",
+          "par": 3,
+          "yds": 156,
+          "hcp": 17,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 2,
+          "name": "Stone Steps",
+          "par": 5,
+          "yds": 492,
+          "hcp": 10,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 3,
+          "name": "Little Lantern",
+          "par": 4,
+          "yds": 408,
+          "hcp": 15,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 4,
+          "name": "Windward",
+          "par": 4,
+          "yds": 336,
+          "hcp": 4,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 5,
+          "name": "Long Meadow",
+          "par": 4,
+          "yds": 401,
+          "hcp": 11,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 6,
+          "name": "Fern Bridge",
+          "par": 3,
+          "yds": 139,
+          "hcp": 16,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 2,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 7,
+          "name": "Old Bell",
+          "par": 4,
+          "yds": 343,
+          "hcp": 7,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 8,
+          "name": "Sky Window",
+          "par": 4,
+          "yds": 342,
+          "hcp": 8,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 9,
+          "name": "Low Water",
+          "par": 5,
+          "yds": 468,
+          "hcp": 18,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 10,
+          "name": "Copper Gate",
+          "par": 4,
+          "yds": 342,
+          "hcp": 9,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 11,
+          "name": "Hidden Turn",
+          "par": 5,
+          "yds": 492,
+          "hcp": 1,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 12,
+          "name": "Tall Grass",
+          "par": 4,
+          "yds": 382,
+          "hcp": 2,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 13,
+          "name": "Open Door",
+          "par": 4,
+          "yds": 383,
+          "hcp": 13,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 14,
+          "name": "Sand Pocket",
+          "par": 5,
+          "yds": 465,
+          "hcp": 3,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 15,
+          "name": "Last Light",
+          "par": 4,
+          "yds": 368,
+          "hcp": 6,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 16,
+          "name": "Twin Pines",
+          "par": 3,
+          "yds": 142,
+          "hcp": 14,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 5,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 17,
+          "name": "Brook Bend",
+          "par": 3,
+          "yds": 130,
+          "hcp": 12,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 18,
+          "name": "Home Green",
+          "par": 4,
+          "yds": 363,
+          "hcp": 5,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        }
+      ],
+      "tagline": "Room to think, room to play.",
+      "personality": "A wholly invented course with varied lengths and open views.",
+      "idealFormat": "Singles or better-ball team play",
+      "pairingAdvice": "Agree on a pace and choose tees suited to each player."
+    },
+    "course-02": {
+      "id": "course-02",
+      "name": "Clover Downs",
+      "icon": "⛳",
+      "tag": "Entirely fictional",
+      "description": "An invented course for exploring the planner and its scoring tools.",
+      "overview": "Wide landing areas, short precision holes and a few longer approaches provide a varied example.",
+      "strategy": "Use the course guide to agree on tees and review each hole together.",
+      "color": "forest",
+      "par": 72,
+      "pars": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        5,
+        3,
+        5,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "hcpIndex": [
+        11,
+        16,
+        5,
+        9,
+        12,
+        17,
+        13,
+        1,
+        7,
+        3,
+        4,
+        6,
+        15,
+        8,
+        10,
+        18,
+        14,
+        2
+      ],
+      "tees": [
+        {
+          "tee": "Meadow",
+          "yds": "5,937",
+          "rating": 68.8,
+          "slope": 116,
+          "note": "Forward example"
+        },
+        {
+          "tee": "Ridge",
+          "yds": "6,217",
+          "rating": 71.4,
+          "slope": 125,
+          "note": "Default example"
+        },
+        {
+          "tee": "Beacon",
+          "yds": "6,557",
+          "rating": 73.60000000000001,
+          "slope": 136,
+          "note": "Long example"
+        }
+      ],
+      "defaultTee": 1,
+      "holes": [
+        {
+          "num": 1,
+          "name": "Windward",
+          "par": 3,
+          "yds": 129,
+          "hcp": 11,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 2,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 2,
+          "name": "Long Meadow",
+          "par": 4,
+          "yds": 386,
+          "hcp": 16,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 3,
+          "name": "Fern Bridge",
+          "par": 4,
+          "yds": 364,
+          "hcp": 5,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 4,
+          "name": "Old Bell",
+          "par": 4,
+          "yds": 337,
+          "hcp": 9,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 5,
+          "name": "Sky Window",
+          "par": 3,
+          "yds": 118,
+          "hcp": 12,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 6,
+          "name": "Low Water",
+          "par": 5,
+          "yds": 470,
+          "hcp": 17,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 7,
+          "name": "Copper Gate",
+          "par": 3,
+          "yds": 192,
+          "hcp": 13,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 4,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 8,
+          "name": "Hidden Turn",
+          "par": 5,
+          "yds": 483,
+          "hcp": 1,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 9,
+          "name": "Tall Grass",
+          "par": 4,
+          "yds": 387,
+          "hcp": 7,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 10,
+          "name": "Open Door",
+          "par": 4,
+          "yds": 395,
+          "hcp": 3,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 11,
+          "name": "Sand Pocket",
+          "par": 4,
+          "yds": 344,
+          "hcp": 4,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 12,
+          "name": "Last Light",
+          "par": 4,
+          "yds": 384,
+          "hcp": 6,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 13,
+          "name": "Twin Pines",
+          "par": 3,
+          "yds": 169,
+          "hcp": 15,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 1,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 14,
+          "name": "Brook Bend",
+          "par": 4,
+          "yds": 329,
+          "hcp": 8,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 15,
+          "name": "Home Green",
+          "par": 4,
+          "yds": 371,
+          "hcp": 10,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 16,
+          "name": "Quiet Corner",
+          "par": 4,
+          "yds": 397,
+          "hcp": 18,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 17,
+          "name": "Stone Steps",
+          "par": 5,
+          "yds": 476,
+          "hcp": 14,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 18,
+          "name": "Little Lantern",
+          "par": 5,
+          "yds": 486,
+          "hcp": 2,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        }
+      ],
+      "tagline": "Room to think, room to play.",
+      "personality": "A wholly invented course with varied lengths and open views.",
+      "idealFormat": "Singles or better-ball team play",
+      "pairingAdvice": "Agree on a pace and choose tees suited to each player."
+    },
+    "course-03": {
+      "id": "course-03",
+      "name": "Copper Brook",
+      "icon": "⛳",
+      "tag": "Entirely fictional",
+      "description": "An invented course for exploring the planner and its scoring tools.",
+      "overview": "Wide landing areas, short precision holes and a few longer approaches provide a varied example.",
+      "strategy": "Use the course guide to agree on tees and review each hole together.",
+      "color": "forest",
+      "par": 72,
+      "pars": [
+        4,
+        3,
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        5,
+        4,
+        4,
+        3,
+        5,
+        5,
+        4,
+        5,
+        3
+      ],
+      "hcpIndex": [
+        14,
+        15,
+        2,
+        11,
+        13,
+        3,
+        6,
+        8,
+        1,
+        17,
+        5,
+        12,
+        18,
+        4,
+        10,
+        16,
+        7,
+        9
+      ],
+      "tees": [
+        {
+          "tee": "Meadow",
+          "yds": "6,182",
+          "rating": 69.0,
+          "slope": 117,
+          "note": "Forward example"
+        },
+        {
+          "tee": "Ridge",
+          "yds": "6,462",
+          "rating": 71.60000000000001,
+          "slope": 126,
+          "note": "Default example"
+        },
+        {
+          "tee": "Beacon",
+          "yds": "6,802",
+          "rating": 73.80000000000001,
+          "slope": 137,
+          "note": "Long example"
+        }
+      ],
+      "defaultTee": 1,
+      "holes": [
+        {
+          "num": 1,
+          "name": "Old Bell",
+          "par": 4,
+          "yds": 393,
+          "hcp": 14,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 2,
+          "name": "Sky Window",
+          "par": 3,
+          "yds": 167,
+          "hcp": 15,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 1,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 3,
+          "name": "Low Water",
+          "par": 4,
+          "yds": 387,
+          "hcp": 2,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 4,
+          "name": "Copper Gate",
+          "par": 4,
+          "yds": 399,
+          "hcp": 11,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 5,
+          "name": "Hidden Turn",
+          "par": 3,
+          "yds": 154,
+          "hcp": 13,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 4,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 6,
+          "name": "Tall Grass",
+          "par": 4,
+          "yds": 404,
+          "hcp": 3,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 7,
+          "name": "Open Door",
+          "par": 4,
+          "yds": 356,
+          "hcp": 6,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 8,
+          "name": "Sand Pocket",
+          "par": 4,
+          "yds": 414,
+          "hcp": 8,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 9,
+          "name": "Last Light",
+          "par": 4,
+          "yds": 351,
+          "hcp": 1,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 10,
+          "name": "Twin Pines",
+          "par": 5,
+          "yds": 518,
+          "hcp": 17,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 11,
+          "name": "Brook Bend",
+          "par": 4,
+          "yds": 340,
+          "hcp": 5,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 12,
+          "name": "Home Green",
+          "par": 4,
+          "yds": 388,
+          "hcp": 12,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 13,
+          "name": "Quiet Corner",
+          "par": 3,
+          "yds": 187,
+          "hcp": 18,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 4,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 14,
+          "name": "Stone Steps",
+          "par": 5,
+          "yds": 513,
+          "hcp": 4,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 15,
+          "name": "Little Lantern",
+          "par": 5,
+          "yds": 498,
+          "hcp": 10,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 16,
+          "name": "Windward",
+          "par": 4,
+          "yds": 362,
+          "hcp": 16,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 17,
+          "name": "Long Meadow",
+          "par": 5,
+          "yds": 474,
+          "hcp": 7,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 18,
+          "name": "Fern Bridge",
+          "par": 3,
+          "yds": 157,
+          "hcp": 9,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 5,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        }
+      ],
+      "tagline": "Room to think, room to play.",
+      "personality": "A wholly invented course with varied lengths and open views.",
+      "idealFormat": "Singles or better-ball team play",
+      "pairingAdvice": "Agree on a pace and choose tees suited to each player."
+    },
+    "course-04": {
+      "id": "course-04",
+      "name": "Lantern Ridge",
+      "icon": "⛳",
+      "tag": "Entirely fictional",
+      "description": "An invented course for exploring the planner and its scoring tools.",
+      "overview": "Wide landing areas, short precision holes and a few longer approaches provide a varied example.",
+      "strategy": "Use the course guide to agree on tees and review each hole together.",
+      "color": "forest",
+      "par": 72,
+      "pars": [
+        5,
+        4,
+        3,
+        3,
+        4,
+        5,
+        3,
+        4,
+        4,
+        5,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        5,
+        4
+      ],
+      "hcpIndex": [
+        9,
+        5,
+        17,
+        14,
+        7,
+        12,
+        2,
+        15,
+        8,
+        6,
+        4,
+        3,
+        16,
+        18,
+        10,
+        1,
+        13,
+        11
+      ],
+      "tees": [
+        {
+          "tee": "Meadow",
+          "yds": "5,943",
+          "rating": 69.19999999999999,
+          "slope": 118,
+          "note": "Forward example"
+        },
+        {
+          "tee": "Ridge",
+          "yds": "6,223",
+          "rating": 71.8,
+          "slope": 127,
+          "note": "Default example"
+        },
+        {
+          "tee": "Beacon",
+          "yds": "6,563",
+          "rating": 74.0,
+          "slope": 138,
+          "note": "Long example"
+        }
+      ],
+      "defaultTee": 1,
+      "holes": [
+        {
+          "num": 1,
+          "name": "Copper Gate",
+          "par": 5,
+          "yds": 506,
+          "hcp": 9,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 2,
+          "name": "Hidden Turn",
+          "par": 4,
+          "yds": 329,
+          "hcp": 5,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 3,
+          "name": "Tall Grass",
+          "par": 3,
+          "yds": 119,
+          "hcp": 17,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 4,
+          "name": "Open Door",
+          "par": 3,
+          "yds": 125,
+          "hcp": 14,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 5,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 5,
+          "name": "Sand Pocket",
+          "par": 4,
+          "yds": 404,
+          "hcp": 7,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 6,
+          "name": "Last Light",
+          "par": 5,
+          "yds": 528,
+          "hcp": 12,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 7,
+          "name": "Twin Pines",
+          "par": 3,
+          "yds": 122,
+          "hcp": 2,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 8,
+          "name": "Brook Bend",
+          "par": 4,
+          "yds": 381,
+          "hcp": 15,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 9,
+          "name": "Home Green",
+          "par": 4,
+          "yds": 406,
+          "hcp": 8,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 10,
+          "name": "Quiet Corner",
+          "par": 5,
+          "yds": 524,
+          "hcp": 6,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 11,
+          "name": "Stone Steps",
+          "par": 4,
+          "yds": 360,
+          "hcp": 4,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 12,
+          "name": "Little Lantern",
+          "par": 4,
+          "yds": 344,
+          "hcp": 3,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 13,
+          "name": "Windward",
+          "par": 4,
+          "yds": 353,
+          "hcp": 16,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 14,
+          "name": "Long Meadow",
+          "par": 4,
+          "yds": 348,
+          "hcp": 18,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 15,
+          "name": "Fern Bridge",
+          "par": 3,
+          "yds": 160,
+          "hcp": 10,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 1,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 16,
+          "name": "Old Bell",
+          "par": 4,
+          "yds": 363,
+          "hcp": 1,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 17,
+          "name": "Sky Window",
+          "par": 5,
+          "yds": 521,
+          "hcp": 13,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 18,
+          "name": "Low Water",
+          "par": 4,
+          "yds": 330,
+          "hcp": 11,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        }
+      ],
+      "tagline": "Room to think, room to play.",
+      "personality": "A wholly invented course with varied lengths and open views.",
+      "idealFormat": "Singles or better-ball team play",
+      "pairingAdvice": "Agree on a pace and choose tees suited to each player."
+    },
+    "course-05": {
+      "id": "course-05",
+      "name": "Willow Hollow",
+      "icon": "⛳",
+      "tag": "Entirely fictional",
+      "description": "An invented course for exploring the planner and its scoring tools.",
+      "overview": "Wide landing areas, short precision holes and a few longer approaches provide a varied example.",
+      "strategy": "Use the course guide to agree on tees and review each hole together.",
+      "color": "forest",
+      "par": 72,
+      "pars": [
+        4,
+        3,
+        4,
+        4,
+        4,
+        5,
+        3,
+        5,
+        4,
+        4,
+        3,
+        5,
+        4,
+        3,
+        4,
+        4,
+        4,
+        5
+      ],
+      "hcpIndex": [
+        3,
+        16,
+        14,
+        4,
+        6,
+        9,
+        10,
+        2,
+        7,
+        18,
+        5,
+        1,
+        15,
+        17,
+        11,
+        8,
+        12,
+        13
+      ],
+      "tees": [
+        {
+          "tee": "Meadow",
+          "yds": "6,133",
+          "rating": 69.39999999999999,
+          "slope": 119,
+          "note": "Forward example"
+        },
+        {
+          "tee": "Ridge",
+          "yds": "6,413",
+          "rating": 72.0,
+          "slope": 128,
+          "note": "Default example"
+        },
+        {
+          "tee": "Beacon",
+          "yds": "6,753",
+          "rating": 74.2,
+          "slope": 139,
+          "note": "Long example"
+        }
+      ],
+      "defaultTee": 1,
+      "holes": [
+        {
+          "num": 1,
+          "name": "Open Door",
+          "par": 4,
+          "yds": 392,
+          "hcp": 3,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 2,
+          "name": "Sand Pocket",
+          "par": 3,
+          "yds": 182,
+          "hcp": 16,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 2,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 3,
+          "name": "Last Light",
+          "par": 4,
+          "yds": 386,
+          "hcp": 14,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 4,
+          "name": "Twin Pines",
+          "par": 4,
+          "yds": 407,
+          "hcp": 4,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 5,
+          "name": "Brook Bend",
+          "par": 4,
+          "yds": 371,
+          "hcp": 6,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 6,
+          "name": "Home Green",
+          "par": 5,
+          "yds": 495,
+          "hcp": 9,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 5,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 7,
+          "name": "Quiet Corner",
+          "par": 3,
+          "yds": 121,
+          "hcp": 10,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 1,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 8,
+          "name": "Stone Steps",
+          "par": 5,
+          "yds": 508,
+          "hcp": 2,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 9,
+          "name": "Little Lantern",
+          "par": 4,
+          "yds": 372,
+          "hcp": 7,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 10,
+          "name": "Windward",
+          "par": 4,
+          "yds": 360,
+          "hcp": 18,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 11,
+          "name": "Long Meadow",
+          "par": 3,
+          "yds": 160,
+          "hcp": 5,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 1,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 12,
+          "name": "Fern Bridge",
+          "par": 5,
+          "yds": 476,
+          "hcp": 1,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 13,
+          "name": "Old Bell",
+          "par": 4,
+          "yds": 391,
+          "hcp": 15,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 1,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 14,
+          "name": "Sky Window",
+          "par": 3,
+          "yds": 133,
+          "hcp": 17,
+          "strategy": "Favor the broad center of this invented green. Choose a club for the carry shown on your own course guide.",
+          "difficulty": 3,
+          "desc": "An invented short precision hole with a broad green.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 15,
+          "name": "Low Water",
+          "par": 4,
+          "yds": 394,
+          "hcp": 11,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 2,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 16,
+          "name": "Copper Gate",
+          "par": 4,
+          "yds": 359,
+          "hcp": 8,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 17,
+          "name": "Hidden Turn",
+          "par": 4,
+          "yds": 405,
+          "hcp": 12,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 3,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        },
+        {
+          "num": 18,
+          "name": "Tall Grass",
+          "par": 5,
+          "yds": 501,
+          "hcp": 13,
+          "strategy": "Use the wider landing area and leave a comfortable approach. The illustrated layout is a fictional planning example.",
+          "difficulty": 4,
+          "desc": "An invented rolling hole with an open approach and a generous landing area.",
+          "keyMiss": "Outside the marked playing corridor",
+          "dangerZone": "Assuming the illustration is a real course map",
+          "scoringTip": "A comfortable approach and a clear plan"
+        }
+      ],
+      "tagline": "Room to think, room to play.",
+      "personality": "A wholly invented course with varied lengths and open views.",
+      "idealFormat": "Singles or better-ball team play",
+      "pairingAdvice": "Agree on a pace and choose tees suited to each player."
+    }
+  },
+  "schedule": [
+    {
+      "day": "Monday",
+      "date": "May 6",
+      "isoDate": "2030-05-06",
+      "label": "Practice day",
+      "sessions": [
+        {
+          "id": "practice",
+          "start": "2030-05-06T13:00:00+00:00",
+          "time": "13:00",
+          "courseId": "course-01",
+          "course": "Juniper Reach",
+          "format": "Practice round (optional)",
+          "isCompetitive": false,
+          "matches": [],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "date": "May 7",
+      "isoDate": "2030-05-07",
+      "label": "Match day 1",
+      "sessions": [
+        {
+          "id": "match-a",
+          "start": "2030-05-07T08:00:00+00:00",
+          "time": "08:00",
+          "courseId": "course-01",
+          "course": "Juniper Reach",
+          "format": "Better-ball team match (2v2)",
+          "isCompetitive": true,
+          "matches": [
+            {
+              "id": "match-a-1",
+              "tee": "08:00",
+              "usaPlayers": [
+                "p01",
+                "p02"
+              ],
+              "euroPlayers": [
+                "p05",
+                "p06"
+              ],
+              "type": "2v2",
+              "tbd": false
+            },
+            {
+              "id": "match-a-2",
+              "tee": "08:09",
+              "usaPlayers": [
+                "p03",
+                "p04"
+              ],
+              "euroPlayers": [
+                "p07",
+                "p08"
+              ],
+              "type": "2v2",
+              "tbd": false
+            }
+          ],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "date": "May 8",
+      "isoDate": "2030-05-08",
+      "label": "Match day 2",
+      "sessions": [
+        {
+          "id": "match-b",
+          "start": "2030-05-08T08:00:00+00:00",
+          "time": "08:00",
+          "courseId": "course-02",
+          "course": "Clover Downs",
+          "format": "Singles match (1v1)",
+          "isCompetitive": true,
+          "matches": [
+            {
+              "id": "match-b-1",
+              "tee": "08:00",
+              "usaPlayers": [
+                "p01"
+              ],
+              "euroPlayers": [
+                "p05"
+              ],
+              "type": "1v1",
+              "tbd": false
+            },
+            {
+              "id": "match-b-2",
+              "tee": "08:09",
+              "usaPlayers": [
+                "p02"
+              ],
+              "euroPlayers": [
+                "p06"
+              ],
+              "type": "1v1",
+              "tbd": false
+            },
+            {
+              "id": "match-b-3",
+              "tee": "08:18",
+              "usaPlayers": [
+                "p03"
+              ],
+              "euroPlayers": [
+                "p07"
+              ],
+              "type": "1v1",
+              "tbd": false
+            },
+            {
+              "id": "match-b-4",
+              "tee": "08:27",
+              "usaPlayers": [
+                "p04"
+              ],
+              "euroPlayers": [
+                "p08"
+              ],
+              "type": "1v1",
+              "tbd": false
+            }
+          ],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "date": "May 9",
+      "isoDate": "2030-05-09",
+      "label": "Match day 3",
+      "sessions": [
+        {
+          "id": "match-c",
+          "start": "2030-05-09T08:00:00+00:00",
+          "time": "08:00",
+          "courseId": "course-03",
+          "course": "Copper Brook",
+          "format": "Better-ball team match (2v2)",
+          "isCompetitive": true,
+          "matches": [
+            {
+              "id": "match-c-1",
+              "tee": "08:00",
+              "usaPlayers": [
+                "p01",
+                "p02"
+              ],
+              "euroPlayers": [
+                "p05",
+                "p06"
+              ],
+              "type": "2v2",
+              "tbd": false
+            },
+            {
+              "id": "match-c-2",
+              "tee": "08:09",
+              "usaPlayers": [
+                "p03",
+                "p04"
+              ],
+              "euroPlayers": [
+                "p07",
+                "p08"
+              ],
+              "type": "2v2",
+              "tbd": false
+            }
+          ],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "date": "May 10",
+      "isoDate": "2030-05-10",
+      "label": "Match day 4",
+      "sessions": [
+        {
+          "id": "match-d",
+          "start": "2030-05-10T08:00:00+00:00",
+          "time": "08:00",
+          "courseId": "course-04",
+          "course": "Lantern Ridge",
+          "format": "Singles match (1v1)",
+          "isCompetitive": true,
+          "matches": [
+            {
+              "id": "match-d-1",
+              "tee": "08:00",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-d-2",
+              "tee": "08:09",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-d-3",
+              "tee": "08:18",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-d-4",
+              "tee": "08:27",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            }
+          ],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        },
+        {
+          "id": "match-e",
+          "start": "2030-05-10T14:00:00+00:00",
+          "time": "14:00",
+          "courseId": "course-05",
+          "course": "Willow Hollow",
+          "format": "Singles match (1v1)",
+          "isCompetitive": true,
+          "matches": [
+            {
+              "id": "match-e-1",
+              "tee": "14:00",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-e-2",
+              "tee": "14:09",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-e-3",
+              "tee": "14:18",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            },
+            {
+              "id": "match-e-4",
+              "tee": "14:27",
+              "usaPlayers": [],
+              "euroPlayers": [],
+              "type": "1v1",
+              "tbd": true
+            }
+          ],
+          "participants": [
+            "p01",
+            "p02",
+            "p03",
+            "p04",
+            "p05",
+            "p06",
+            "p07",
+            "p08"
+          ]
+        }
+      ]
+    }
+  ],
+  "handicapping": {
+    "mode": "full-course",
+    "singlesAllowance": 1,
+    "betterBallAllowance": 1,
+    "description": "House format: everyone receives their full course handicap. Optional relative-match format is documented separately."
+  },
+  "contests": {
+    "teamPot": 160,
+    "mvpPot": 40,
+    "ctpPerHole": 5,
+    "birdiePrizes": [
+      30,
+      15,
+      5
+    ]
+  },
+  "lodging": {
+    "name": "The Field House",
+    "address": "Fictional address, add your own privately",
+    "checkIn": "Monday after 15:00",
+    "checkOut": "Friday before 10:00",
+    "arrival": "Use this space for your own arrival notes. The example contains no access code.",
+    "wifi": "Add connection instructions privately after choosing where this will be hosted.",
+    "amenities": [
+      "Shared kitchen",
+      "Covered terrace",
+      "Drying room",
+      "Board-game shelf"
+    ]
+  },
+  "demo": {
+    "fictional": true,
+    "description": "Every person, place, date, score, handicap and expense is invented."
+  },
+  "explore": {
+    "activities": [
+      {
+        "id": "place-art",
+        "name": "The Sketch Barn",
+        "cat": "Creative afternoon",
+        "addr": "Fictional village square",
+        "drive": "Example: short walk",
+        "price": "Example activity fee",
+        "desc": "Bring a sketchbook and compare your course designs over tea.",
+        "hours": "Add actual opening hours when planning your own trip.",
+        "img": "/assets/invented-cottage.png",
+        "x": 170,
+        "y": 160
+      },
+      {
+        "id": "place-walk",
+        "name": "Meadow Loop",
+        "cat": "Walking trail",
+        "addr": "Fictional meadow entrance",
+        "drive": "Example: ten-minute ride",
+        "price": "Example: free",
+        "desc": "An easy loop for an afternoon away from the scorecard.",
+        "hours": "Example daylight activity.",
+        "img": "/assets/invented-course.png",
+        "x": 540,
+        "y": 280
+      }
+    ],
+    "restaurants": [
+      {
+        "id": "place-kitchen",
+        "name": "The Copper Table",
+        "cuisine": "Shared plates",
+        "addr": "Fictional market lane",
+        "drive": "Example: fifteen-minute walk",
+        "price": "Example: moderate",
+        "priceNote": "Set a current group estimate before choosing a venue.",
+        "desc": "A made-up gathering place for the planner demo.",
+        "hours": "No real business or opening hours are represented.",
+        "goodFor": "Group dinner",
+        "img": "/assets/invented-cottage.png",
+        "x": 290,
+        "y": 230
+      }
+    ],
+    "delivery": [
+      {
+        "id": "place-pizza",
+        "name": "Round & Ready",
+        "cuisine": "Pizza and salads",
+        "addr": "Fictional delivery kitchen",
+        "drive": "Example: delivery to the Field House",
+        "price": "Example: moderate",
+        "desc": "An invented menu option to demonstrate food and delivery planning.",
+        "hours": "Add real hours privately.",
+        "phone": "",
+        "rating": "Not rated",
+        "catering": "Add your own notes",
+        "url": "#explore",
+        "menuUrl": "#explore",
+        "x": 430,
+        "y": 90
+      }
+    ]
+  },
+  "turfGuide": {
+    "title": "Course observation notes",
+    "sections": [
+      {
+        "title": "Before the round",
+        "tips": [
+          "Use the practice area to see how the actual greens roll today.",
+          "Ask the course staff about local rules, maintenance and any closed areas."
+        ]
+      },
+      {
+        "title": "During the round",
+        "tips": [
+          "Keep your own notes on firm or soft landing areas and carry distances.",
+          "Conditions change. Treat the example guide as a structure to fill in, not a reading of a real course."
+        ]
+      }
+    ]
+  }
+}
